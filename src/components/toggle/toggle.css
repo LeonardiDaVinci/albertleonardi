@@ -1,0 +1,37 @@
+.toggle-theme-btn {
+  background-color: var(--togologol-color);
+  height: 48px;
+  width: 48px;
+  border-radius: 50%; 
+  box-shadow: 5px black;
+  position: fixed;
+  top: 0.75rem;
+  right: 40px;  
+  z-index: var(--z-modal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--toggle-color);
+  border: none;
+  cursor: pointer;
+}
+
+.bx {
+  font-size: 2rem; 
+}
+
+.icon-sun, .icon-moon {
+  position: absolute;
+  transition: opacity 500ms ease, transform 500ms ease;
+  font-size: 24px;
+}
+
+.icon-hidden {
+  opacity: 0;
+  transform: scale(0.75); 
+}
+
+.bx:not(.icon-hidden) {
+  opacity: 1;
+  transform: scale(1); 
+}
