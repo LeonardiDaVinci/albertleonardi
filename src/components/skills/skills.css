@@ -50,7 +50,7 @@
 
 .skills__level{
     font-size: var(--tiny-font-size);
-    color: var(--icon-color);
+    color: var(--other-color);
 }
 
 @media screen and (max-width: 992px) {
